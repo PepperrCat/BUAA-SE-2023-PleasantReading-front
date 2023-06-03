@@ -32,5 +32,5 @@ jobs:
         user: ${{ secrets.USER_NAME }}
         pass: ${{ secrets.USER_PASS }}
         connect_timeout: 10s
-        local: './front/dist/*'
+        local: './dist/*'
         remote: /PleasantReading/front/dist
