@@ -15,8 +15,6 @@ jobs:
     # 使用别人的action
     - uses: actions/checkout@v3
     # 步骤名称
-    - name: cd front
-      run: cd /home/runner/work/BUAA-SE-2023-PleasantReading-front/BUAA-SE-2023-PleasantReading-front/front
     - name: npm install
       # 步骤执行指令
       run: npm install
@@ -34,5 +32,5 @@ jobs:
         user: ${{ secrets.USER_NAME }}
         pass: ${{ secrets.USER_PASS }}
         connect_timeout: 10s
-        local: './front/dist/*'
+        local: './dist/*'
         remote: /PleasantReading/front/dist
